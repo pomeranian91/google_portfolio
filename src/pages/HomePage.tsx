@@ -1,23 +1,20 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import Catagories from '../components/Cartagories';
+import Footer from '../components/Footer';
+import HomeMain from '../components/HomeMain';
+import NavigationBar from '../templates/NavigationBar';
+import styled from 'styled-components';
 
-const Home = styled.div``;
+const Container = styled.div``;
 
 const HomePage = () => {
   return (
-    <Home>
-      <div>상단</div>
-      <div>
-        <div>YONGWOO</div>
-        <div>검색창</div>
-        <div>
-          <div>I'M</div>
-          <div>Have skills</div>
-          <div>My carrer</div>
-          <div>Show Projects</div>
-        </div>
-      </div>
-    </Home>
+    <Container>
+      <NavigationBar />
+      <HomeMain />
+      <Catagories />
+      <Footer />
+    </Container>
   );
 };
 export default HomePage;
