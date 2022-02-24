@@ -20,7 +20,7 @@
 
 ## 3. 🔗 배포 링크
 
-[배포 링크 바로가기](https://gallant-visvesvaraya-11f7e2.netlify.app) 
+[배포 링크 바로가기](https://condescending-ritchie-dfc6dc.netlify.app) 
 
 ---
 
@@ -77,7 +77,7 @@ Project Start For Development
 ---
 
 ## 6. 🌲 프로젝트 구조
-
+```
 📦src
  ┣ 📂components
  ┃ ┣ 📜AboutContainer.tsx
@@ -111,3 +111,4 @@ Project Start For Development
  ┣ 📜index.tsx
  ┣ 📜react-app-env.d.ts
  ┗ 📜Router.tsx
+ ```
