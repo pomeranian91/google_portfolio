@@ -17,14 +17,6 @@ const Container = styled.div`
     padding: 30px 10px;
   }
 `;
-const HeadLineText = styled.div`
-  margin-bottom: 20px;
-  color: ${(props) => props.theme.color.googleGreen};
-  font-size: 42px;
-  font-weight: 700;
-  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  text-shadow: 2px 2px 3px ${(props) => props.theme.color.googleYellow};
-`;
 const ProjectsLayout = styled.div`
   ${(props) => props.theme.flexMinin('row', '', '')};
   margin-bottom: 40px;
@@ -130,7 +122,7 @@ const ProjectsContainer = () => {
 
   return (
     <Container>
-      {projectsContent.map((project) => {
+      {projectsContent.map((project: Projects) => {
         return (
           <ProjectsLayout>
             <ProjectsImg>

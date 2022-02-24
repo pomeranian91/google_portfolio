@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import HomeTitle from './HomeTitle';
 
@@ -56,14 +56,12 @@ box-shadow: inset 10px 10px 15px -10px #c3c3c3,
 }`;
 
 const HomeMain = () => {
-  const [typingAni, setTypingAni] = useState<string | number>('');
-
   return (
     <Home>
       <MainContainer>
         <HomeTitle />
         <SearchInputOuter>
-          <SearchInput>{typingAni}</SearchInput>
+          <SearchInput />
         </SearchInputOuter>
       </MainContainer>
     </Home>

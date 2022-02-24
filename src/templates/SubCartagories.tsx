@@ -52,7 +52,7 @@ const StyledLink = styled(Link)`
 
 const SubCatagories = () => {
   const location = useLocation();
-  console.log(location.pathname);
+
   return (
     <CatagoriesContainer>
       <StyledLink to="/about">

@@ -112,7 +112,7 @@ const SkillsContainer: React.FC = () => {
     <Container>
       <HeadLineText>클릭해주세요🔻</HeadLineText>
       <CardContainer>
-        {skillsContent.map((skills: any) => {
+        {skillsContent.map((skills: Skills) => {
           return (
             <SkillsCard
               onClick={() => {
@@ -132,7 +132,7 @@ const SkillsContainer: React.FC = () => {
       </CardContainer>
 
       <SkillsPopContainer>
-        {skillsContent.map((skills: any) => {
+        {skillsContent.map((skills: Skills) => {
           return (
             <div>
               {currentSkills ? (

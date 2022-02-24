@@ -44,15 +44,15 @@ const CareerContent = styled.div`
   line-height: 2;
 `;
 
-interface careerContent {
+interface CareerContent {
   date: string;
   title: string;
   content1: string;
   content2: string;
   content3: string;
 }
-const careerContainer = () => {
-  const [careerContent, setcareerContnt] = useState<careerContent[]>([
+const CareerContainer = () => {
+  const [careerContent, setCareerContent] = useState<CareerContent[]>([
     {
       date: '2021년 9월 27일 ~ 현재',
       title: '📕 인터넷 강의 & 독학',
@@ -70,7 +70,7 @@ const careerContainer = () => {
   ]);
   return (
     <Container>
-      {careerContent.map((text) => {
+      {careerContent.map((text: CareerContent) => {
         return (
           <CareerLayout>
             <CareerTitle>{text.title}</CareerTitle>
@@ -84,4 +84,4 @@ const careerContainer = () => {
     </Container>
   );
 };
-export default careerContainer;
+export default CareerContainer;
