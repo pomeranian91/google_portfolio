@@ -22,7 +22,7 @@
 
 ## 3. 🔗 배포 링크
 
-[배포 링크 바로가기](https://gallant-visvesvaraya-11f7e2.netlify.app)
+[배포 링크 바로가기](https://condescending-ritchie-dfc6dc.netlify.app)
 
 ---
 
@@ -80,36 +80,38 @@ Project Start For Development
 
 ## 6. 🌲 프로젝트 구조
 
+```
 📦src
-┣ 📂components
-┃ ┣ 📜AboutContainer.tsx
-┃ ┣ 📜CareerContainer.tsx
-┃ ┣ 📜Cartagories.tsx
-┃ ┣ 📜Contacts.tsx
-┃ ┣ 📜Footer.tsx
-┃ ┣ 📜HomeIcon.tsx
-┃ ┣ 📜HomeMain.tsx
-┃ ┣ 📜HomeTitle.tsx
-┃ ┣ 📜MainNavigation.tsx
-┃ ┣ 📜ProjectsContainer.tsx
-┃ ┣ 📜SkillsContainer.tsx
-┃ ┣ 📜SubSearchInput.tsx
-┃ ┗ 📜SubTitle.tsx
-┣ 📂image
-┣ 📂pages
-┃ ┣ 📜AboutPage.tsx
-┃ ┣ 📜CareerPage.tsx
-┃ ┣ 📜HomePage.tsx
-┃ ┣ 📜ProjectsPage.tsx
-┃ ┗ 📜SkillsPage.tsx
-┣ 📂styles
-┃ ┣ 📜GlobalStyle.ts
-┃ ┣ 📜styled.d.ts
-┃ ┗ 📜theme.ts
-┣ 📂templates
-┃ ┣ 📜NavigaionHomeIcon.tsx
-┃ ┣ 📜NavigationBar.tsx
-┃ ┗ 📜SubCartagories.tsx
-┣ 📜index.tsx
-┣ 📜react-app-env.d.ts
-┗ 📜Router.tsx
+ ┣ 📂components
+ ┃ ┣ 📜AboutContainer.tsx
+ ┃ ┣ 📜CareerContainer.tsx
+ ┃ ┣ 📜Cartagories.tsx
+ ┃ ┣ 📜Contacts.tsx
+ ┃ ┣ 📜Footer.tsx
+ ┃ ┣ 📜HomeIcon.tsx
+ ┃ ┣ 📜HomeMain.tsx
+ ┃ ┣ 📜HomeTitle.tsx
+ ┃ ┣ 📜MainNavigation.tsx
+ ┃ ┣ 📜ProjectsContainer.tsx
+ ┃ ┣ 📜SkillsContainer.tsx
+ ┃ ┣ 📜SubSearchInput.tsx
+ ┃ ┗ 📜SubTitle.tsx
+ ┣ 📂image
+ ┣ 📂pages
+ ┃ ┣ 📜AboutPage.tsx
+ ┃ ┣ 📜CareerPage.tsx
+ ┃ ┣ 📜HomePage.tsx
+ ┃ ┣ 📜ProjectsPage.tsx
+ ┃ ┗ 📜SkillsPage.tsx
+ ┣ 📂styles
+ ┃ ┣ 📜GlobalStyle.ts
+ ┃ ┣ 📜styled.d.ts
+ ┃ ┗ 📜theme.ts
+ ┣ 📂templates
+ ┃ ┣ 📜NavigaionHomeIcon.tsx
+ ┃ ┣ 📜NavigationBar.tsx
+ ┃ ┗ 📜SubCartagories.tsx
+ ┣ 📜index.tsx
+ ┣ 📜react-app-env.d.ts
+ ┗ 📜Router.tsx
+```
