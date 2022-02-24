@@ -88,7 +88,7 @@ const ProjectsContainer = () => {
       id: 0,
       img: projectportfolio,
       title: '포트폴리오 사이트',
-      site: '',
+      site: 'https://condescending-ritchie-dfc6dc.netlify.app',
       git: 'https://github.com/pomeranian91/google_portfolio',
       skills1: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
       skills2:

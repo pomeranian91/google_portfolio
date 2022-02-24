@@ -1,4 +1,5 @@
 # 📝 저의 포트폴리오 입니다!
+
 ## 1. 💁 프로젝트 소개
 
 - 주제 : 포트폴리오
@@ -7,7 +8,9 @@
 ---
 
 ## 2. 🛠️ 기술 스택
+
 ---
+
 <p align="center">
 <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
 <img alt="TypeScript" src = "https://img.shields.io/badge/TypeScript-%231572B6.svg?style=for-the-badge&logo=TypeScript&logoColor=white" />
@@ -17,10 +20,9 @@
 
 ---
 
-
 ## 3. 🔗 배포 링크
 
-[배포 링크 바로가기](https://gallant-visvesvaraya-11f7e2.netlify.app) 
+[배포 링크 바로가기](https://gallant-visvesvaraya-11f7e2.netlify.app)
 
 ---
 
@@ -46,15 +48,15 @@
 - 새 페이지 이동 시 display를 이용하여 팝업 노출
 - 상단 네비게이션 메뉴 클릭 시 scrollintoview를 이용한 알맞은 위치로 이동
 - 테블릿, 모바일화면을 고려하여 레이아웃을 구성했습니다.
-  
+
 ### 4) Career(경력,교육 사항)
-  
+
 - 추후 내용 추가 및 수정을 위해 값들을 하나의 state에 저장 후 map을 사용하여 구현했습니다.
 - 저의 경력, 교육 사항에 관한 내용을 작성했습니다.
 - 개발과 관련 없는 내용들을 삭제했습니다.
-  
+
 ### 5) Projects(작업물)
-  
+
 - 추후 내용 추가 및 수정을 위해 값들을 하나의 state에 저장 후 map을 사용하여 구현했습니다.
 - 작업물의 이미지와 타이틀, 사용기술, 간략한 내용, 링크를 작성했습니다.
 
@@ -64,7 +66,7 @@
 
 Project Clone
 
-`$ git clone` 
+`$ git clone`
 
 Project Setup
 
@@ -79,35 +81,35 @@ Project Start For Development
 ## 6. 🌲 프로젝트 구조
 
 📦src
- ┣ 📂components
- ┃ ┣ 📜AboutContainer.tsx
- ┃ ┣ 📜CareerContainer.tsx
- ┃ ┣ 📜Cartagories.tsx
- ┃ ┣ 📜Contacts.tsx
- ┃ ┣ 📜Footer.tsx
- ┃ ┣ 📜HomeIcon.tsx
- ┃ ┣ 📜HomeMain.tsx
- ┃ ┣ 📜HomeTitle.tsx
- ┃ ┣ 📜MainNavigation.tsx
- ┃ ┣ 📜ProjectsContainer.tsx
- ┃ ┣ 📜SkillsContainer.tsx
- ┃ ┣ 📜SubSearchInput.tsx
- ┃ ┗ 📜SubTitle.tsx
- ┣ 📂image
- ┣ 📂pages
- ┃ ┣ 📜AboutPage.tsx
- ┃ ┣ 📜CareerPage.tsx
- ┃ ┣ 📜HomePage.tsx
- ┃ ┣ 📜ProjectsPage.tsx
- ┃ ┗ 📜SkillsPage.tsx
- ┣ 📂styles
- ┃ ┣ 📜GlobalStyle.ts
- ┃ ┣ 📜styled.d.ts
- ┃ ┗ 📜theme.ts
- ┣ 📂templates
- ┃ ┣ 📜NavigaionHomeIcon.tsx
- ┃ ┣ 📜NavigationBar.tsx
- ┃ ┗ 📜SubCartagories.tsx
- ┣ 📜index.tsx
- ┣ 📜react-app-env.d.ts
- ┗ 📜Router.tsx
+┣ 📂components
+┃ ┣ 📜AboutContainer.tsx
+┃ ┣ 📜CareerContainer.tsx
+┃ ┣ 📜Cartagories.tsx
+┃ ┣ 📜Contacts.tsx
+┃ ┣ 📜Footer.tsx
+┃ ┣ 📜HomeIcon.tsx
+┃ ┣ 📜HomeMain.tsx
+┃ ┣ 📜HomeTitle.tsx
+┃ ┣ 📜MainNavigation.tsx
+┃ ┣ 📜ProjectsContainer.tsx
+┃ ┣ 📜SkillsContainer.tsx
+┃ ┣ 📜SubSearchInput.tsx
+┃ ┗ 📜SubTitle.tsx
+┣ 📂image
+┣ 📂pages
+┃ ┣ 📜AboutPage.tsx
+┃ ┣ 📜CareerPage.tsx
+┃ ┣ 📜HomePage.tsx
+┃ ┣ 📜ProjectsPage.tsx
+┃ ┗ 📜SkillsPage.tsx
+┣ 📂styles
+┃ ┣ 📜GlobalStyle.ts
+┃ ┣ 📜styled.d.ts
+┃ ┗ 📜theme.ts
+┣ 📂templates
+┃ ┣ 📜NavigaionHomeIcon.tsx
+┃ ┣ 📜NavigationBar.tsx
+┃ ┗ 📜SubCartagories.tsx
+┣ 📜index.tsx
+┣ 📜react-app-env.d.ts
+┗ 📜Router.tsx
