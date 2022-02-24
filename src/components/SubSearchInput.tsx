@@ -12,7 +12,7 @@ const SearchInput = styled.div`
   font-weight: 600;
   font-family: Roboto;
   @media screen and (max-width: 768px) {
-    width: 301px;
+    display: none;
   }
   &::before {
     content: '안녕하세요 Front-End 개발자되기 위해 노력하는 조용우 입니다.';
@@ -55,7 +55,7 @@ width: 391px;
 box-shadow: inset 10px 10px 15px -10px #c3c3c3,
     inset -10px -10px 15px -10px #ffffff;
     @media screen and (max-width:768px){
-      width: 461px;
+      display: none;
     }
 }`;
 

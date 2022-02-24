@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CarrerContainer from '../components/CareerContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
@@ -11,6 +12,7 @@ const CarrerPage = () => {
       <NavLayout>
         <NavigaionHomeIcon />
         <SubCatagories />
+        <CarrerContainer />
       </NavLayout>
     </div>
   );

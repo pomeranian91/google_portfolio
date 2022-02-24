@@ -8,7 +8,7 @@ import react from '../../src/image/icon-react.png';
 
 const Container = styled.div`
   ${(props) => props.theme.flexMinin('column', 'space-between', '')}
-  width:100%;
+  width: 100%;
   height: 100%;
 `;
 const HeadLineText = styled.div`
@@ -20,6 +20,7 @@ const HeadLineText = styled.div`
 `;
 const CardContainer = styled.div`
   ${(props) => props.theme.flexMinin('row', '', '')}
+  flex-wrap: wrap;
   margin: 5px 30px;
   max-width: 1200px;
 `;
@@ -68,40 +69,44 @@ interface Skills {
   id: number;
   img: string;
   text: string;
-  detail: string;
+  detail1: string;
+  detail2: string;
 }
 
 const SkillsContainer: React.FC = () => {
   const [skillsContent, setSkillsContent] = useState<Skills[]>([
-    { id: 0, img: html, text: 'HTML', detail: 'Semantic Markup을 알고 중요시 합니다.' },
+    { id: 0, img: html, text: 'HTML', detail1: 'Semantic Markup을 알고 중요시 합니다.', detail2: '' },
     {
       id: 1,
       img: css,
       text: 'CSS',
-      detail: 'Scss와 Styled-component를 사용 할 줄 압니다. 다양한 애니메이션을 좋아합니다.',
+      detail1: 'Scss와 Styled-component를 사용 할 줄 압니다. ',
+      detail2: '다양한 애니메이션을 좋아합니다.',
     },
     {
       id: 2,
       img: javascript,
       text: 'Javascript',
-      detail: 'vanilla Javascript와 jQuery를 다룰 줄 압니다. ES6 신문법을 활용 할 줄 압니다.',
+      detail1: 'vanilla Javascript와 jQuery를 다룰 줄 압니다. ',
+      detail2: 'ES6 신문법을 활용 할 줄 압니다.',
     },
     {
       id: 3,
       img: typescript,
       text: 'Typescript',
-      detail: '기존 javascript의 문제점을 알고 typescript의 필요성을 알고 있습니다.',
+      detail1: 'typescript의 필요성을 알고 있습니다.',
+      detail2: '최근 가장 많이 사용하고 있습니다.',
     },
     {
       id: 4,
       img: react,
       text: 'React',
-      detail: '가장 많이 사용하는 라이브러리 입니다. 최적화와 컴포넌트 재사용을 고려합니다.',
+      detail1: '가장 많이 사용하는 라이브러리 입니다. ',
+      detail2: '최적화와 컴포넌트 재사용을 고려합니다.',
     },
   ]);
   const [clickNumber, setClickNumber] = useState<number>(-1);
   const [currentSkills, setCurrentSkills] = useState<boolean>(false);
-  console.log(clickNumber);
 
   return (
     <Container>
@@ -134,8 +139,9 @@ const SkillsContainer: React.FC = () => {
                 <div>
                   {skills.id == clickNumber ? (
                     <SkillsPop>
-                      <img src={skills.img} style={{ width: '300px' }} />
-                      <SkillsDeatil>{skills.detail}</SkillsDeatil>
+                      <img src={skills.img} style={{ width: '200px' }} />
+                      <SkillsDeatil>{skills.detail1}</SkillsDeatil>
+                      <SkillsDeatil>{skills.detail2}</SkillsDeatil>
                     </SkillsPop>
                   ) : null}
                 </div>
