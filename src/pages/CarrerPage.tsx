@@ -1,10 +1,18 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
+import SubCatagories from '../templates/SubCartagories';
 
-const Carrer = () => {
+const NavLayout = styled.div``;
+
+const CarrerPage = () => {
   return (
     <div>
-      <div>교육</div>
+      <NavLayout>
+        <NavigaionHomeIcon />
+        <SubCatagories />
+      </NavLayout>
     </div>
   );
 };
-export default Carrer;
+export default CarrerPage;

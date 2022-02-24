@@ -1,12 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const CatagoriesContainer = styled.div`
   ${({ theme }) => theme.flexMinin('row', 'center', 'center')}
 `;
 const CatagoriesBox = styled.div`
-  margin: 20px;
+  ${({ theme }) => theme.flexMinin('column', 'center', 'center')}
+  width: 120px;
+  height: 120px;
+  margin: 20px 10px;
   cursor: pointer;
+  &:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+  }
 `;
 const CatagoriesIcon = styled.div`
   ${({ theme }) => theme.flexMinin('row', 'center', 'center')}
@@ -24,26 +31,46 @@ const CatagoriesText = styled.div`
   font-weight: 600;
   font-family: Arial, 'Malgun Gothic', Gulim, sans-serif;
 `;
+const StyledLink = styled(Link)`
+  color: black;
+  textdecoration: none;
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    color: black;
+    text-decoration: none;
+  }
+`;
 
 const Catagories = () => {
   return (
     <CatagoriesContainer>
-      <CatagoriesBox>
-        <CatagoriesIcon>🧑</CatagoriesIcon>
-        <CatagoriesText>I'm</CatagoriesText>
-      </CatagoriesBox>
-      <CatagoriesBox>
-        <CatagoriesIcon>💻</CatagoriesIcon>
-        <CatagoriesText>Skills</CatagoriesText>
-      </CatagoriesBox>
-      <CatagoriesBox>
-        <CatagoriesIcon>📈</CatagoriesIcon>
-        <CatagoriesText>Carrer</CatagoriesText>
-      </CatagoriesBox>
-      <CatagoriesBox>
-        <CatagoriesIcon>📗</CatagoriesIcon>
-        <CatagoriesText>Projects</CatagoriesText>
-      </CatagoriesBox>
+      <StyledLink to="/about">
+        <CatagoriesBox>
+          <CatagoriesIcon>🧑</CatagoriesIcon>
+          <CatagoriesText>I'm</CatagoriesText>
+        </CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/skills">
+        <CatagoriesBox>
+          <CatagoriesIcon>💻</CatagoriesIcon>
+          <CatagoriesText>Skills</CatagoriesText>
+        </CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/carrer">
+        <CatagoriesBox>
+          <CatagoriesIcon>📈</CatagoriesIcon>
+          <CatagoriesText>Carrer</CatagoriesText>
+        </CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/projects">
+        <CatagoriesBox>
+          <CatagoriesIcon>📗</CatagoriesIcon>
+          <CatagoriesText>Projects</CatagoriesText>
+        </CatagoriesBox>
+      </StyledLink>
     </CatagoriesContainer>
   );
 };

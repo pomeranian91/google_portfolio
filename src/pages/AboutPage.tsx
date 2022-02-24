@@ -1,20 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import SkillsContainer from '../components/SkillsContainer';
+import AboutContainer from '../components/AboutContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
 const NavLayout = styled.div``;
 
-const SkillsPage = () => {
+const AboutPage = () => {
   return (
     <div>
       <NavLayout>
         <NavigaionHomeIcon />
         <SubCatagories />
-        <SkillsContainer />
+        <AboutContainer />
       </NavLayout>
     </div>
   );
 };
-export default SkillsPage;
+export default AboutPage;

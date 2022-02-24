@@ -1,9 +1,17 @@
-import React from "react";
+import React from 'react';
+import styled from 'styled-components';
+import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
+import SubCatagories from '../templates/SubCartagories';
+
+const NavLayout = styled.div``;
 
 const ProjectsPage = () => {
   return (
     <div>
-      <div>프로젝트</div>
+      <NavLayout>
+        <NavigaionHomeIcon />
+        <SubCatagories />
+      </NavLayout>
     </div>
   );
 };

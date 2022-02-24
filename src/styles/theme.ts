@@ -1,6 +1,8 @@
 import { DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
+  darkBackground: '#000',
+  lightBackground: '#fff',
   color: {
     googleRed: 'rgb(234,067,053)',
     googleBlue: 'rgb(066,133,244)',
