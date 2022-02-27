@@ -4,27 +4,6 @@ import velogImg from '../../src/image/img-velog.jpg';
 import gitHubImg from '../../src/image/img-github.png';
 import faceImg from '../../src/image/img-myface.jpg';
 
-const Container = styled.div`
-  ${({ theme }) => theme.flexMinin('row', '', 'center')}
-`;
-const IconBox = styled.div`
-  width: 32px;
-  height: 32px;
-  margin: 12px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  & :hover {
-    opacity: 0.8;
-  }
-`;
-const MyContacts = styled.div<{ viewNumber: boolean }>`
-  display: ${(props) => (props.viewNumber ? 'none' : 'block')};
-  font-size: 13px;
-  font-weight: 600;
-  font-family: 'Segoe UI';
-`;
-
 const Contacts = () => {
   const [viewNumber, setViewNumber] = useState<boolean>(true);
   const viewContacts = () => {
@@ -52,3 +31,24 @@ const Contacts = () => {
   );
 };
 export default Contacts;
+
+const Container = styled.div`
+  ${({ theme }) => theme.flexMinin('row', '', 'center')}
+`;
+const IconBox = styled.div`
+  width: 32px;
+  height: 32px;
+  margin: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  & :hover {
+    opacity: 0.8;
+  }
+`;
+const MyContacts = styled.div<{ viewNumber: boolean }>`
+  display: ${(props) => (props.viewNumber ? 'none' : 'block')};
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+`;

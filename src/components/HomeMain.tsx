@@ -2,6 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import HomeTitle from './HomeTitle';
 
+const HomeMain = () => {
+  return (
+    <Home>
+      <MainContainer>
+        <HomeTitle />
+        <SearchInputOuter>
+          <SearchInput />
+        </SearchInputOuter>
+      </MainContainer>
+    </Home>
+  );
+};
+export default HomeMain;
+
 const Home = styled.div``;
 const MainContainer = styled.div`
   ${({ theme }) => theme.flexMinin('column', 'center', 'center')}
@@ -26,10 +40,11 @@ const SearchInput = styled.div`
     top: 3px;
     left: 20px;
     width: 531px;
-    height: 13px;
+    height: 15px;
     color: black;
     overflow: hidden;
     border-right: 1px solid black;
+    font-family: 'Noto Sans KR', sans-serif;
     animation: typing 4s steps(31) alternate infinite;
   }
 
@@ -54,17 +69,3 @@ box-shadow: inset 10px 10px 15px -10px #c3c3c3,
       width: 461px;
     }
 }`;
-
-const HomeMain = () => {
-  return (
-    <Home>
-      <MainContainer>
-        <HomeTitle />
-        <SearchInputOuter>
-          <SearchInput />
-        </SearchInputOuter>
-      </MainContainer>
-    </Home>
-  );
-};
-export default HomeMain;

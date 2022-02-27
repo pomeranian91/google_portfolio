@@ -2,6 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link, useLocation } from 'react-router-dom';
 
+const SubCatagories = () => {
+  const location = useLocation();
+
+  return (
+    <CatagoriesContainer>
+      <StyledLink to="/about">
+        <CatagoriesBox className={location.pathname == '/about' ? 'about' : ''}>🧑 About</CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/skills">
+        <CatagoriesBox className={location.pathname == '/skills' ? 'skills' : ''}>💻 Skills</CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/carrer">
+        <CatagoriesBox className={location.pathname == '/carrer' ? 'carrer' : ''}>📈 Carrer</CatagoriesBox>
+      </StyledLink>
+      <StyledLink to="/projects">
+        <CatagoriesBox className={location.pathname == '/projects' ? 'projects' : ''}>📗 Projects</CatagoriesBox>
+      </StyledLink>
+    </CatagoriesContainer>
+  );
+};
+export default SubCatagories;
+
 const CatagoriesContainer = styled.div`
   ${({ theme }) => theme.flexMinin('row', 'flex-start', 'center')}
   margin:20px;
@@ -49,25 +71,3 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `;
-
-const SubCatagories = () => {
-  const location = useLocation();
-
-  return (
-    <CatagoriesContainer>
-      <StyledLink to="/about">
-        <CatagoriesBox className={location.pathname == '/about' ? 'about' : ''}>🧑 About</CatagoriesBox>
-      </StyledLink>
-      <StyledLink to="/skills">
-        <CatagoriesBox className={location.pathname == '/skills' ? 'skills' : ''}>💻 Skills</CatagoriesBox>
-      </StyledLink>
-      <StyledLink to="/carrer">
-        <CatagoriesBox className={location.pathname == '/carrer' ? 'carrer' : ''}>📈 Carrer</CatagoriesBox>
-      </StyledLink>
-      <StyledLink to="/projects">
-        <CatagoriesBox className={location.pathname == '/projects' ? 'projects' : ''}>📗 Projects</CatagoriesBox>
-      </StyledLink>
-    </CatagoriesContainer>
-  );
-};
-export default SubCatagories;

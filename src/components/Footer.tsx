@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Footer = () => {
+  return (
+    <Container>
+      <div>©2022.CHOYONGWOO All rights reserved.</div>
+    </Container>
+  );
+};
+export default Footer;
+
 const Container = styled.div`
   position: absolute;
   bottom: 20px;
@@ -11,12 +20,3 @@ const Container = styled.div`
   color: #000;
   opacity: 0.5;
 `;
-
-const Footer = () => {
-  return (
-    <Container>
-      <div>©2022.CHOYONGWOO All rights reserved.</div>
-    </Container>
-  );
-};
-export default Footer;

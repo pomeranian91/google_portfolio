@@ -4,8 +4,6 @@ import SkillsContainer from '../components/SkillsContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
-const NavLayout = styled.div``;
-
 const SkillsPage = () => {
   return (
     <div>
@@ -18,3 +16,5 @@ const SkillsPage = () => {
   );
 };
 export default SkillsPage;
+
+const NavLayout = styled.div``;

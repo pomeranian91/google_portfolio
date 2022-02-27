@@ -4,8 +4,6 @@ import CarrerContainer from '../components/CareerContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
-const NavLayout = styled.div``;
-
 const CarrerPage = () => {
   return (
     <div>
@@ -18,3 +16,5 @@ const CarrerPage = () => {
   );
 };
 export default CarrerPage;
+
+const NavLayout = styled.div``;

@@ -33,13 +33,13 @@ const SkillsText = styled.div`
   margin-top: 10px;
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 `;
 const SkillsDeatil = styled.div`
   margin-top: 10px;
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 `;
 const SkillsPopContainer = styled.div`
   margin: 15px auto;
@@ -50,7 +50,7 @@ const SkillsPopContainer = styled.div`
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-  font-family: Arial, 'Malgun Gothic', Gulim, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 `;
 const SkillsCard = styled.div`
   ${(props) => props.theme.flexMinin('column', 'center', 'center')};

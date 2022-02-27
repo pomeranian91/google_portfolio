@@ -5,8 +5,6 @@ import HomeMain from '../components/HomeMain';
 import NavigationBar from '../templates/NavigationBar';
 import styled from 'styled-components';
 
-const Container = styled.div``;
-
 const HomePage = () => {
   return (
     <Container>
@@ -18,3 +16,5 @@ const HomePage = () => {
   );
 };
 export default HomePage;
+
+const Container = styled.div``;

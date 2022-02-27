@@ -4,8 +4,6 @@ import ProjectsContainer from '../components/ProjectsContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
-const NavLayout = styled.div``;
-
 const ProjectsPage = () => {
   return (
     <div>
@@ -18,3 +16,5 @@ const ProjectsPage = () => {
   );
 };
 export default ProjectsPage;
+
+const NavLayout = styled.div``;

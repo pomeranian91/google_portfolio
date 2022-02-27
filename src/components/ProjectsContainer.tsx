@@ -3,71 +3,6 @@ import styled from 'styled-components';
 import projectportfolio from '../../src/image/img-portfolio.png';
 import projectdnc from '../../src/image/img-dnc.png';
 
-const Container = styled.div`
-  ${(props) => props.theme.flexMinin('column', '', '')}
-
-  margin: 30px 50px;
-  padding: 30px 50px;
-  @media screen and (max-width: 1300px) {
-    margin: 30px 30px;
-    padding: 30px 30px;
-  }
-  @media screen and (max-width: 768px) {
-    margin: 30px 10px;
-    padding: 30px 10px;
-  }
-`;
-const ProjectsLayout = styled.div`
-  ${(props) => props.theme.flexMinin('row', '', '')};
-  margin-bottom: 40px;
-  @media screen and (max-width: 1024px) {
-    flex-wrap: wrap;
-  }
-`;
-const ProjectsSkills = styled.div`
-  ${(props) => props.theme.flexMinin('row', '', '')};
-  flex-wrap: wrap;
-`;
-const ProjectsImg = styled.div`
-  border: 1px solid #f7f7f7;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-const ProjectsTitle = styled.div`
-  margin-bottom: 15px;
-  font-size: 24px;
-  font-weight: 600;
-  font-family: Roboto, 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  text-shadow: 2px 2px 3px ${(props) => props.theme.color.googleGray};
-`;
-const ProjectsText = styled.div`
-  ${(props) => props.theme.flexMinin('column', '', '')};
-  margin: 20px;
-`;
-const ProjectsSkillsbox = styled.div`
-  margin: 2px;
-`;
-const ProjectsDetail = styled.div`
-  margin: 10px 0;
-  font-size: 18px;
-  font-family: Roboto, 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-`;
-const ButtonBox = styled.div``;
-const ButtonGit = styled.button`
-  margin: 5px;
-  padding: 5px;
-  font-size: 14px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  &:hover {
-    background: black;
-    color: white;
-  }
-`;
-
 interface Projects {
   id: number;
   img: string;
@@ -179,3 +114,68 @@ const ProjectsContainer = () => {
   );
 };
 export default ProjectsContainer;
+
+const Container = styled.div`
+  ${(props) => props.theme.flexMinin('column', '', '')}
+
+  margin: 30px 50px;
+  padding: 30px 50px;
+  @media screen and (max-width: 1300px) {
+    margin: 30px 30px;
+    padding: 30px 30px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 30px 10px;
+    padding: 30px 10px;
+  }
+`;
+const ProjectsLayout = styled.div`
+  ${(props) => props.theme.flexMinin('row', '', '')};
+  margin-bottom: 40px;
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+`;
+const ProjectsSkills = styled.div`
+  ${(props) => props.theme.flexMinin('row', '', '')};
+  flex-wrap: wrap;
+`;
+const ProjectsImg = styled.div`
+  border: 1px solid #f7f7f7;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+const ProjectsTitle = styled.div`
+  margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Nanum Pen Script', cursive;
+`;
+const ProjectsText = styled.div`
+  ${(props) => props.theme.flexMinin('column', '', '')};
+  margin: 20px;
+`;
+const ProjectsSkillsbox = styled.div`
+  margin: 2px;
+`;
+const ProjectsDetail = styled.div`
+  margin: 10px 0;
+  font-size: 24px;
+  font-family: 'Nanum Pen Script', cursive;
+`;
+const ButtonBox = styled.div``;
+const ButtonGit = styled.button`
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  &:hover {
+    background: black;
+    color: white;
+  }
+`;

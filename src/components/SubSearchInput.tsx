@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const SubSearchInput = () => {
+  return (
+    <SearchInputOuter>
+      <SearchInput />
+    </SearchInputOuter>
+  );
+};
+export default SubSearchInput;
+
 const SearchInput = styled.div`
   position: relative;
   width: 370px;
@@ -58,12 +67,3 @@ box-shadow: inset 10px 10px 15px -10px #c3c3c3,
       display: none;
     }
 }`;
-
-const SubSearchInput = () => {
-  return (
-    <SearchInputOuter>
-      <SearchInput />
-    </SearchInputOuter>
-  );
-};
-export default SubSearchInput;

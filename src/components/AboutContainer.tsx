@@ -2,84 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import profile from '../../src/image/img-profile.jpg';
 
-const Container = styled.div`
-  ${(props) => props.theme.flexMinin('row', 'space-between', '')}
-  margin:30px 50px;
-  padding: 30px 50px;
-  @media screen and (max-width: 1024px) {
-    margin: 30px 30px;
-    padding: 30px 30px;
-  }
-  @media screen and (max-width: 768px) {
-    margin: 20px 10px;
-    padding: 20px 10px;
-  }
-`;
-const HeadLineText = styled.div`
-  margin-bottom: 20px;
-  color: ${(props) => props.theme.color.googleGreen};
-  font-size: 42px;
-  font-weight: 700;
-  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  text-shadow: 2px 2px 3px ${(props) => props.theme.color.googleYellow};
-  @media screen and (max-width: 1024px) {
-    font-size: 36px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
-const TextContainer = styled.div`
-  ${(props) => props.theme.flexMinin('column', '', '')}
-  max-width:1200px;
-  margin-right: 80px;
-  @media screen and (max-width: 1204px) {
-    margin-right: 0px;
-  }
-  @media screen and (max-width: 768px) {
-    margin-right: 0px;
-  }
-`;
-const TextBox = styled.div`
-  padding: 10px;
-  margin: 20px;
-  border-radius: 15px;
-  border-bottom: 2px solid gray;
-  border-right: 2px solid gray;
-  box-shadow: -2px -2px 5px #fff, 4px 4px 8px #babecc;
-`;
-const ImgContainer = styled.div`
-  display: block;
-  max-width: 400px;
-  @media screen and (max-width: 1204px) {
-    display: none;
-  }
-`;
-const TextTitle = styled.div`
-  margin-bottom: 15px;
-  color: ${(props) => props.theme.color.googleRed};
-  font-size: 24px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  @media screen and (max-width: 1024px) {
-    font-size: 20px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-const TextContent = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.5;
-  font-family: Arial, 'Malgun Gothic', Gulim, sans-serif;
-  @media screen and (max-width: 1024px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 11px;
-  }
-`;
 interface Text {
   title: string;
   content: string;
@@ -122,3 +44,86 @@ const AboutContainer: React.FC = () => {
   );
 };
 export default AboutContainer;
+
+const Container = styled.div`
+  ${(props) => props.theme.flexMinin('row', 'space-between', '')}
+  margin:30px 50px;
+  padding: 30px 50px;
+  @media screen and (max-width: 1024px) {
+    margin: 30px 30px;
+    padding: 30px 30px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 20px 10px;
+    padding: 20px 10px;
+  }
+`;
+const HeadLineText = styled.div`
+  margin-bottom: 20px;
+  color: ${(props) => props.theme.color.googleGreen};
+  font-size: 46px;
+  font-weight: 700;
+
+  font-family: 'Nanum Pen Script', cursive;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 38px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+`;
+const TextContainer = styled.div`
+  ${(props) => props.theme.flexMinin('column', '', '')}
+  max-width:1200px;
+  margin-right: 80px;
+  @media screen and (max-width: 1204px) {
+    margin-right: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+  }
+`;
+const TextBox = styled.div`
+  padding: 10px;
+  margin: 20px;
+  border-radius: 15px;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  box-shadow: -2px -2px 5px #fff, 4px 4px 8px #babecc;
+`;
+const ImgContainer = styled.div`
+  display: block;
+  max-width: 400px;
+  @media screen and (max-width: 1204px) {
+    display: none;
+  }
+`;
+const TextTitle = styled.div`
+  margin-bottom: 15px;
+  color: ${(props) => props.theme.color.googleRed};
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
+const TextContent = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif;
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+  }
+`;

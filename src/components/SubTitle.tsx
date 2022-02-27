@@ -2,6 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import SubSearchInput from '../components/SubSearchInput';
 
+const SubTitle: React.FC = () => {
+  return (
+    <Container>
+      <MainTitle>
+        <span>Y</span>
+        <span>o</span>
+        <span>n</span>
+        <span>g</span>
+        <span>W</span>
+        <span>o</span>
+        <span>o</span>
+      </MainTitle>
+      <SubSearchInput />
+    </Container>
+  );
+};
+export default SubTitle;
+
 const Container = styled.div`
   ${({ theme }) => theme.flexMinin('row', 'center', 'center')}
   & :hover {
@@ -37,21 +55,3 @@ const MainTitle = styled.div`
     color: ${(props) => props.theme.color.googleBlue};
   }
 `;
-
-const SubTitle: React.FC = () => {
-  return (
-    <Container>
-      <MainTitle>
-        <span>Y</span>
-        <span>o</span>
-        <span>n</span>
-        <span>g</span>
-        <span>W</span>
-        <span>o</span>
-        <span>o</span>
-      </MainTitle>
-      <SubSearchInput />
-    </Container>
-  );
-};
-export default SubTitle;

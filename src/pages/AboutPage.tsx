@@ -4,8 +4,6 @@ import AboutContainer from '../components/AboutContainer';
 import NavigaionHomeIcon from '../templates/NavigaionHomeIcon';
 import SubCatagories from '../templates/SubCartagories';
 
-const NavLayout = styled.div``;
-
 const AboutPage = () => {
   return (
     <div>
@@ -18,3 +16,5 @@ const AboutPage = () => {
   );
 };
 export default AboutPage;
+
+const NavLayout = styled.div``;
