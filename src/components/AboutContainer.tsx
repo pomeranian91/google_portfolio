@@ -61,7 +61,6 @@ const TextTitle = styled.div`
   font-size: 24px;
   font-weight: 600;
   font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  text-shadow: 2px 2px 3px ${(props) => props.theme.color.googleGray};
   @media screen and (max-width: 1024px) {
     font-size: 20px;
   }

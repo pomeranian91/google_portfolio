@@ -33,9 +33,8 @@ const CareerTitle = styled.div`
   color: ${(props) => props.theme.color.googleBlue};
   border-bottom: 2px solid #f7f7f7;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   font-family: 'Segoe UI', Arial, 'Malgun Gothic', Gulim, sans-serif;
-  text-shadow: 1px 1px 2px ${(props) => props.theme.color.googleRed}; ;
 `;
 const CareerContent = styled.div`
   font-size: 18px;
