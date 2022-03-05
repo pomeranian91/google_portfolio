@@ -17,7 +17,7 @@ const SearchInput = styled.div`
   border: 1px solid #fff;
   border-radius: 35px;
   box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   font-family: Roboto;
   @media screen and (max-width: 768px) {
@@ -28,7 +28,7 @@ const SearchInput = styled.div`
     position: absolute;
     top: 6px;
     left: 20px;
-    width: 371px;
+    width: 391px;
     height: 12px;
     color: black;
     overflow: hidden;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import projectportfolio from '../../src/image/img-portfolio.png';
 import projectdnc from '../../src/image/img-dnc.png';
+import projectwanted from '../../src/image/img-wanted.png';
 
 interface Projects {
   id: number;
@@ -22,7 +23,7 @@ const ProjectsContainer = () => {
     {
       id: 0,
       img: projectportfolio,
-      title: '포트폴리오 사이트',
+      title: 'React를 이용한 포트폴리오 사이트 입니다.',
       site: 'https://condescending-ritchie-dfc6dc.netlify.app',
       git: 'https://github.com/pomeranian91/google_portfolio',
       skills1: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
@@ -33,13 +34,14 @@ const ProjectsContainer = () => {
       skills4:
         'https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white',
       skills5: '',
-      detail1: '✅저의 포트폴리오 사이트 입니다.',
-      detail2: '',
+      detail1:
+        '✅ 컴포넌트의 재사용을 고려하여 컴포넌트를 작은 단위로 나눈 후 template과 page에 붙여넣는 방식으로 제작했습니다.',
+      detail2: '✅ 내용 변경 및 수정에 용이하도록 내용은 state값에 저장한 후 map 메서드로 나열했습니다.',
     },
     {
       id: 1,
       img: projectdnc,
-      title: '니콘내콘 웹앱',
+      title: 'Next.js를 이용한 기프티콘 스토어',
       site: 'https://github.com/pomeranian91/15_06th_doubleNC',
       git: 'https://github.com/pomeranian91/15_06th_doubleNC',
       skills1: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
@@ -48,9 +50,24 @@ const ProjectsContainer = () => {
         'https://img.shields.io/badge/TypeScript-%231572B6.svg?style=for-the-badge&logo=TypeScript&logoColor=white',
       skills4:
         'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',
-      skills5:
-        'https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white',
-      detail1: '✅포트폴리오용 웹앱 입니다.',
+      skills5: 'https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white',
+      detail1:
+        '✅ 홈화면과 브랜드페이지, 상품리스트, 상품상세, 왼쪽 메뉴를 눌러 나타나는 고객 센터 페이지를 구성했습니다.',
+      detail2: '✅ FAQ 부분에선 질문 클릭 시 상황에 맞는 데이터를 호출 하도록 했습니다.',
+    },
+    {
+      id: 2,
+      img: projectwanted,
+      title: 'React 를 이용한 원티드 클론 코딩',
+      site: 'https://pomeranian91.github.io/wanted_pre_onboarding/',
+      git: 'https://github.com/pomeranian91/wanted_pre_onboarding',
+      skills1: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
+      skills2:
+        'https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E',
+      skills3: '',
+      skills4: '',
+      skills5: '',
+      detail1: '✅ 원티드 채용사이트의 일부를 클론 코딩한 프로젝트 입니다.',
       detail2: '',
     },
   ]);
